@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const[list,setlist]=useState([
+    {name:"Game of thrones",rate:5,img:"https://wallpapercave.com/wp/wp4355108.jpg"},
+    {name:" Vikings",rate:4.5,img:"https://www.happy-landing.net/wp-content/uploads/2020/12/Vikings-Valhalla.png"},
+    {name:"Titanic",rate:4,img:"https://www.pixelstalk.net/wp-content/uploads/images1/Titanic-Wallpapers-HD-768x480.jpg"},
+  ])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <input placeholder='Enter your search'></input>
+
+    </>
+
   );
 }
 
